@@ -1,0 +1,63 @@
+html {
+  text-align: center;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  font-size: 96px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+.info-buttons {
+  display: flex;
+  justify-content: center;
+}
+#contact,
+#about {
+  border: 1px solid #6c63ff;
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+#contact {
+  color: white;
+  background-color: #6c63ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+#about {
+  color: #6c63ff;
+}
+#contact:hover,
+#about:hover {
+  cursor: pointer;
+}
+.images-container {
+  display: flex;
+  justify-content: center;
+}
+.images-container img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+#mail {
+  color: #6c63ff;
+  font-size: 28px;
+  text-align: center;
+}
+#homepage-link {
+  text-align: center;
+}
