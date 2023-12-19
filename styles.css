@@ -1,63 +1,128 @@
-html {
-  text-align: center;
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 body {
-  font-family: "Times New Roman", Times, serif;
+  margin: 60px auto;
+  max-width: 800px;
 }
-h1 {
-  font-size: 96px;
-}
-h2 {
-  font-size: 48px;
-}
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-}
+
 h1,
 h2,
 h3 {
   text-align: center;
   margin: 0;
 }
-.info-buttons {
+
+#h1 {
+  font-size: 96px;
+}
+
+#h2 {
+  font-size: 48px;
+}
+#post-contact {
+  font-size: 50px;
+}
+
+#h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.container img {
+  width: 100px;
+  max-width: 100%;
+}
+.navigation-links {
   display: flex;
+  margin-top: 40px;
   justify-content: center;
 }
-#contact,
-#about {
-  border: 1px solid #6c63ff;
+
+.navigation-links a,
+.app-links a {
   margin: 20px;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
+  text-transform: capitalize;
 }
-#contact {
+.app-links a {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-left: 0px;
+}
+.app-links {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
   color: white;
-  background-color: #6c63ff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-#about {
-  color: #6c63ff;
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
-#contact:hover,
-#about:hover {
-  cursor: pointer;
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
 }
-.images-container {
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
   display: flex;
   justify-content: center;
-}
-.images-container img {
-  height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-}
-#mail {
-  color: #6c63ff;
+  color: var(--primary-color);
   font-size: 28px;
-  text-align: center;
+  text-decoration: none;
 }
-#homepage-link {
-  text-align: center;
+
+.email-link:hover {
+  text-decoration: underline;
+}
+.container img {
+  width: 100%;
+  padding: 8px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 40px;
+}
+.app-descriptions {
+  text-align: left;
+}
+.app-descriptions h2 {
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  #h1 {
+    font-size: 60px;
+  }
 }
