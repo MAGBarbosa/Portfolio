@@ -75,7 +75,8 @@ p {
   margin-bottom: 45px;
 }
 
-.contact-link {
+.contact-link,
+.individual-app-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
@@ -128,6 +129,33 @@ p {
 
 @media (max-width: 576px) {
   #h1 {
-    font-size: 60px;
+    font-size: 45px;
+  }
+  #h2,
+  #post-contact {
+    font-size: 30px;
+  }
+
+  .email-link {
+    font-size: 25px;
+  }
+  #navbar {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  h3 {
+    padding: 10px;
+  }
+  .container div,
+  .container h2 {
+    text-align: center;
+  }
+  .individual-app-link {
+    width: 100%;
+    display: block;
+    margin: 5px 20px 20px 20px;
+  }
+  .container .index-images {
+    display: none;
   }
 }
