@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=dice-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is an about page of Mélanie Barbosa, a Front-end developer from Porto."
+    />
+    <title>About the Front-End Developer - Mélanie Barbosa</title>
+
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -16,12 +22,14 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <title>About Front-End Developer - Mélanie Barbosa</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top px-5"
+      id="navbar"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mélanie Barbosa</a>
+        <a class="navbar-brand" href="index.html">Mélanie Barbosa</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,34 +58,35 @@
         </div>
       </div>
     </nav>
-    <a href="index.html" class="homepage-link">Back to homepage</a>
+    <br />
+    <br />
     <h1 id="h1">About me</h1>
     <h3 id="h3">Front-end developer from Vila Nova de Gaia, Portugal</h3>
     <div class="about-paragraphs">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
-        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
-        blanditiis harum.
+        Mélanie Barbosa is currently a 4th year PhD student with a background in
+        Biology. After 12 years since beginning her bachelor in 2011, she
+        developed an interest for coding and in particular for Front-End Web
+        Development.
       </p>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <img src="resources/landing-page.jpg" alt="Japanese Gastronomy" />
+          <img src="images/weather.png" alt="weather app" title="weather app" />
         </div>
         <div class="col-sm-4">
-          <img src="resources/weather-app.jpg" alt="Weather App" />
+          <img src="images/yoga.png" alt="yoga app" title="yoga app" />
         </div>
         <div class="col-sm-4">
-          <img src="resources/world-clock.jpeg" alt="World Clock" />
+          <img src="images/yogurt.png" alt="yogurt page" title="yogurt page" />
         </div>
       </div>
     </div>
 
     <div id="contact">
       <h2 id="post-contact">📮 Contact me</h2>
-      <a href="mailto:melanie@barbosa.com" class="email-link">
+      <a href="mailto:melanie@barbosa.com" class="email-link" title="email">
         melanie@barbosa.com
       </a>
     </div>
