@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is the coding Portfolio of Mélanie Barbosa, a Front-end developer ."
+    />
     <title>Front-End Developer - Mélanie Barbosa</title>
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -19,9 +23,12 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top px-5"
+      id="navbar"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mélanie Barbosa</a>
+        <a class="navbar-brand" href="index.html">Mélanie Barbosa</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,23 +55,26 @@
         </div>
       </div>
     </nav>
-
-    <h2 id="h2">👋 Hello, I am</h2>
+    <br />
+    <br />
+    <h2 id="h2">👋 Hi I am</h2>
     <h1 id="h1">Mélanie Barbosa</h1>
     <h3 id="h3">Front-end developer, based in Vila Nova de Gaia</h3>
     <div class="navigation-links">
       <a href="about.html#contact" class="contact-link">Contact me</a>
       <a href="about.html" class="about-link">About me</a>
     </div>
-
-    <h3 class="apps-presentation">
-      Featured Project showcasing my best coding Projects
-    </h3>
-
+    <br />
+    <br />
     <div class="container">
       <div class="row app-sections">
         <div class="col-sm-6">
-          <img src="resources/landing-page.jpg" alt="Japanese Gastronomy" />
+          <img
+            src="resources/landing-page.jpg"
+            alt="Japanese Gastronomy"
+            title="Japanese Gastronomy"
+            class="index-images"
+          />
         </div>
         <div class="col-sm-6 app-descriptions">
           <h2>Japanese Gastronomy Landing Page</h2>
@@ -73,7 +83,7 @@
             CSS and vanilla Javascript.
           </div>
           <div class="app-links">
-            <a href="index.html" class="contact-link"
+            <a href="index.html" class="individual-app-link"
               >Launch Japanese Gastronomy app</a
             >
           </div>
@@ -88,16 +98,28 @@
             Javascript.
           </div>
           <div class="app-links">
-            <a href="index.html" class="contact-link">Launch Weather app</a>
+            <a href="index.html" class="individual-app-link" title="Weather App"
+              >Launch Weather app</a
+            >
           </div>
         </div>
         <div class="col-sm-6">
-          <img src="resources/weather-app.jpg" alt="Weather App" />
+          <img
+            src="resources/weather-app.jpg"
+            alt="Weather app"
+            title="weather"
+            class="index-images"
+          />
         </div>
       </div>
       <div class="row app-sections">
         <div class="col-sm-6">
-          <img src="resources/world-clock.jpeg" alt="World Clock" />
+          <img
+            src="resources/world-clock.jpeg"
+            alt="World Clock app"
+            title="World Clock"
+            class="index-images"
+          />
         </div>
         <div class="col-sm-6 app-descriptions">
           <h2>World Clock</h2>
@@ -107,7 +129,9 @@
             HTML, CSS, and vanilla Javascript.
           </div>
           <div class="app-links">
-            <a href="index.html" class="contact-link">Launch World Clock app</a>
+            <a href="index.html" class="individual-app-link" title="World Clock"
+              >Launch World Clock app</a
+            >
           </div>
         </div>
       </div>
