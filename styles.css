@@ -19,6 +19,10 @@ h3 {
   text-align: center;
   margin: 0;
 }
+h1,
+h2 {
+  font-family: "Aclonica", sans-serif;
+}
 
 #h1 {
   font-size: 96px;
