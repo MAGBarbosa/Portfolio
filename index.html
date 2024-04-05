@@ -69,7 +69,9 @@
     <br />
     <h2 id="h2">👋 Hi I am</h2>
     <h1 id="h1">Mélanie Barbosa</h1>
-    <h3 id="h3">Front-end developer, based in Vila Nova de Gaia</h3>
+    <h3 id="h3">
+      <span class="auto-type"></span> based in Vila Nova de Gaia, Portugal
+    </h3>
     <div class="navigation-links">
       <a href="about.html#contact" class="contact-link">Contact me</a>
       <a href="about.html" class="about-link">About me</a>
@@ -147,4 +149,13 @@
       </div>
     </div>
   </body>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["front-end developer", "scientific researcher"],
+      typeSpeed: 175,
+      backSpeed: 175,
+      loop: true,
+    });
+  </script>
 </html>

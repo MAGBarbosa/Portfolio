@@ -71,16 +71,18 @@
     <br />
     <br />
     <h1 id="h1">About me</h1>
-    <h3 id="h3">Front-end developer from Vila Nova de Gaia, Portugal</h3>
+    <h3 id="h3">
+      <span class="auto-type"></span> based in Vila Nova de Gaia, Portugal
+    </h3>
     <div class="about-paragraphs">
       <p>
         Mélanie Barbosa is currently a 4th year PhD student with a background in
         Scientific Research. After 12 years since beginning her bachelor degree
         in Biology, she developed an interest for coding and in particular for
-        Front-End Web Development. Nowadays, Mélanie is learning about HTML,
-        CSS, Bootstrap, Responsive web development, API integration, Javascript
-        and React through the SheCodes coding bootcamp. She hopes to transition
-        to a front-end development career in the near future.
+        Front-End Web Development. In her spare time, Mélanie is learning about
+        HTML, CSS, Bootstrap, Responsive web development, API integration,
+        Javascript and React through the SheCodes coding bootcamp. She hopes to
+        transition to a front-end development career in the near future.
       </p>
     </div>
 
@@ -119,4 +121,13 @@
       </a>
     </div>
   </body>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["front-end developer", "scientific researcher"],
+      typeSpeed: 175,
+      backSpeed: 175,
+      loop: true,
+    });
+  </script>
 </html>
