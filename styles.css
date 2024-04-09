@@ -56,22 +56,16 @@ h3 {
 #h2 {
   font-size: 30px;
 }
-#post-contact {
+#post-contact,
+#projects {
   font-size: 50px;
   font-family: "Aclonica", sans-serif;
+  text-align: center;
 }
 
 #h3 {
   font-size: 20px;
   opacity: 0.7;
-}
-
-body p {
-  padding: 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
 }
 
 .footer-info {
@@ -180,15 +174,25 @@ footer i {
 }
 .container img {
   width: 100%;
+
   padding: 8px;
   box-shadow: var(--box-shadow);
   margin-bottom: 40px;
 }
-.app-descriptions {
-  text-align: left;
+.app-sections img {
+  max-width: 600px;
+  height: 400px;
+  object-position: top;
+  object-fit: cover;
 }
+.about-text,
+.app-descriptions,
 .app-descriptions h2 {
   text-align: left;
+}
+.about-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
 }
 .auto-type span {
   position: relative;
@@ -345,7 +349,18 @@ footer i {
     background-size: 100% calc(2vw + 59px);
   }
 }
-
+@media (max-width: 1025px) {
+  .app-sections img {
+    max-width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .app-sections img {
+    max-width: 300px;
+    height: 220px;
+  }
+}
 @media (max-width: 576px) {
   #h1 {
     font-size: 45px;
