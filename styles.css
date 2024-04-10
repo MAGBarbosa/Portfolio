@@ -174,16 +174,15 @@ footer i {
 }
 .container img {
   width: 100%;
-
-  padding: 8px;
-  box-shadow: var(--box-shadow);
-  margin-bottom: 40px;
 }
 .app-sections img {
   max-width: 600px;
   height: 400px;
   object-position: top;
   object-fit: cover;
+  padding: 8px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 40px;
 }
 .about-text,
 .app-descriptions,
@@ -193,6 +192,9 @@ footer i {
 .about-text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 17px;
+}
+.my-photo {
+  box-shadow: var(--box-shadow);
 }
 .auto-type span {
   position: relative;
