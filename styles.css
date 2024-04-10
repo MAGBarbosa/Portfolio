@@ -167,7 +167,6 @@ footer i {
 }
 .tech-stack {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-  width: 90%;
   margin: 0 auto;
   margin-top: 50px;
   padding: 20px 0px;
@@ -205,10 +204,13 @@ footer i {
 .about-text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  text-align: left;
+  text-align: center;
 }
 .my-photo {
   box-shadow: var(--box-shadow);
+}
+#about-main-heading {
+  display: none !important;
 }
 .auto-type span {
   position: relative;
@@ -380,6 +382,19 @@ footer i {
 @media (max-width: 576px) {
   #h1 {
     font-size: 45px;
+    text-align: center;
+  }
+  .my-photo {
+    max-height: 450px;
+  }
+  .about-shapedivider {
+    padding-bottom: 90px !important;
+  }
+  #about-main-heading {
+    display: block !important;
+  }
+  #about-second-heading {
+    display: none !important;
   }
   #h2,
   #post-contact {
