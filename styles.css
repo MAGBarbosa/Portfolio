@@ -24,7 +24,8 @@ body {
 }
 
 h1,
-.app-descriptions h2 {
+.app-descriptions h2,
+.tech-stack h2 {
   font-family: "Aclonica", sans-serif;
 }
 h1,
@@ -135,7 +136,9 @@ footer i {
   box-shadow: var(--box-shadow);
   color: white;
 }
-
+.contact-section {
+  margin-top: 60px;
+}
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -163,11 +166,13 @@ footer i {
   background-color: white;
 }
 .tech-stack {
-  box-shadow: var(--box-shadow);
-  width: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  width: 90%;
   margin: 0 auto;
   margin-top: 50px;
-  padding: 40px;
+  padding: 20px 0px;
+  border-radius: 15px;
+  background-color: rgba(235, 212, 240, 0.892);
 }
 .email-link {
   display: flex;
@@ -199,7 +204,7 @@ footer i {
 }
 .about-text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   text-align: left;
 }
 .my-photo {
