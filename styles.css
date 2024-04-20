@@ -7,13 +7,9 @@
 
 body {
   margin: 0 auto;
-  min-width: 100%;
-  max-width: 1000px;
-}
-.container {
-  margin: 0 auto;
   width: 100%;
 }
+
 .top {
   color: white;
   text-align: center;
@@ -25,13 +21,18 @@ body {
 
 h1,
 .app-descriptions h2,
-.tech-stack h2 {
+.tech-stack h2,
+.app-h2 {
   font-family: "Aclonica", sans-serif;
 }
 h1,
 h2,
 h3 {
   text-align: center;
+}
+.app-h2 {
+  font-size: 25px;
+  margin-top: 20px;
 }
 .footer-heading {
   font-family: "Aclonica", sans-serif;
@@ -69,9 +70,13 @@ h3 {
   font-size: 20px;
   opacity: 0.7;
 }
-
+.app-card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
 .footer-info {
   background-color: var(--dark-color);
+  display: flex;
+  justify-content: space-between;
 }
 footer p {
   color: var(--secondary-color);
@@ -84,7 +89,6 @@ footer a {
 footer .container {
   margin: 0 auto;
   min-width: 100%;
-  max-width: 1000px;
   padding: 2rem 6rem;
 }
 
@@ -95,6 +99,7 @@ footer i {
 .footer-columns,
 .footer-columns p {
   text-align: left;
+  padding-right: 40px;
 }
 .useful-links a {
   display: block;
@@ -184,17 +189,22 @@ footer i {
 .email-link:hover {
   text-decoration: underline;
 }
-.container img {
-  width: 100%;
+.app-sections {
+  display: flex;
+  justify-content: space-between;
 }
 .app-sections img {
-  max-width: 600px;
-  height: 400px;
+  max-width: 400px;
+  height: 300px;
   object-position: top;
   object-fit: cover;
   padding: 8px;
   box-shadow: var(--box-shadow);
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+}
+
+.container img {
+  width: 100%;
 }
 
 .app-descriptions,
@@ -384,6 +394,7 @@ footer i {
     font-size: 45px;
     text-align: center;
   }
+
   .my-photo {
     max-height: 450px;
   }
@@ -419,8 +430,5 @@ footer i {
     width: 100%;
     display: block;
     margin: 5px 20px 20px 20px;
-  }
-  .container .index-images {
-    display: none;
   }
 }
