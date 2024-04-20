@@ -1,3 +1,4 @@
+/*
 <div>
   My very first SheCodes project of a landing page created using HTML, CSS and
   vanilla Javascript.
@@ -12,3 +13,4 @@
   various countries, using Moment.js library. Coded using HTML, CSS, and vanilla
   Javascript.
 </div>;
+*/
