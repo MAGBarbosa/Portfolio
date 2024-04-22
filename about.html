@@ -145,14 +145,72 @@
           </div>
         </div>
       </div>
-
-      <div id="contact" class="contact-section">
-        <h2 id="post-contact">Contact me</h2>
-        <a href="mailto:melanie@barbosa.com" class="email-link" title="email">
-          melanie@barbosa.com
-        </a>
-      </div>
     </div>
+    <section class="contact-section contact container" id="contact">
+      <h2 id="post-contact">Contact me</h2>
+      <p class="contact-description">
+        Feel free to send me an email at
+        <a href="mailto:melanie_barbosa@hotmail.com" title="Send email to me"
+          >melanie_barbosa@hotmail.com</a
+        >, or use the form below. I'll get back to you as soon as possible.
+      </p>
+      <div class="form-container container">
+        <form action="#">
+          <div class="input-box">
+            <div class="input-field field">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                placeholder="Name"
+                id="name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Please fill "Name" section</div>
+            </div>
+            <div class="input-field field">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                placeholder="Email"
+                id="email"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Please fill "Email" section</div>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="input-field field">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                placeholder="Subject"
+                id="subject"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Please fill "Subject" section</div>
+            </div>
+          </div>
+          <div class="textarea-field field">
+            <label for="message">Message</label>
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              class="item"
+              autocomplete="off"
+            ></textarea>
+            <div class="error-txt">Please fill "Message" section</div>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
     <footer>
       <div class="shapedividerbottom">
         <br />
