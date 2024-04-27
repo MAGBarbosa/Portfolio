@@ -75,6 +75,7 @@ h3 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   overflow: hidden;
+  margin-bottom: 60px;
 }
 .footer-info {
   background-color: var(--dark-color);
@@ -117,25 +118,29 @@ footer i {
   margin-top: 40px;
   justify-content: center;
 }
-
+.navigation-links a {
+  margin: 20px;
+  padding: 20px 15px;
+}
 .navigation-links a,
 .app-links a {
-  margin: 20px;
   border-radius: 4px;
-  padding: 20px 15px;
+
   text-decoration: none;
   text-transform: capitalize;
 }
 .app-links a {
   border-radius: 4px;
-  padding: 10px 10px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
   text-decoration: none;
   text-transform: capitalize;
   min-width: 100%;
   display: inline-block;
 }
 .app-links {
-  margin: 15px 15px;
+  margin: 20px 5px;
 }
 
 .contact-link,
@@ -204,6 +209,16 @@ footer i {
   border-radius: 10px 10px 0px 0px;
   box-shadow: var(--box-shadow);
   margin-bottom: 0px;
+}
+.live-button {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: white;
+}
+.github-button {
+  color: #030407ad;
+  border: 1px solid #030407ad;
+  background-color: white;
 }
 
 .container img {
@@ -458,6 +473,6 @@ form .input-box {
   .individual-app-link {
     width: 100%;
     display: block;
-    margin: 5px 20px 20px 20px;
+    margin: 0 auto;
   }
 }
