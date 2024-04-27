@@ -221,6 +221,22 @@ footer i {
   background-color: white;
 }
 
+.contact-link,
+.about-link,
+.github-button,
+.live-button,
+.about-app {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.contact-link:hover,
+.about-link:hover,
+.github-button:hover,
+.live-button:hover,
+.about-app:hover {
+  top: -6px;
+}
 .container img {
   width: 100%;
 }
