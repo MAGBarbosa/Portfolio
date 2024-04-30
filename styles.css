@@ -22,7 +22,8 @@ body {
 h1,
 .app-descriptions h2,
 .tech-stack h2,
-.app-h2 {
+.app-h2,
+.back-h2 {
   font-family: "Aclonica", sans-serif;
 }
 h1,
@@ -30,9 +31,12 @@ h2,
 h3 {
   text-align: center;
 }
-.app-h2 {
+.app-h2,
+.back-h2 {
   font-size: 25px;
   text-align: left;
+}
+.app-h2 {
   margin: 10px 15px;
 }
 .footer-heading {
@@ -141,13 +145,18 @@ footer i {
   min-width: 100%;
   display: inline-block;
 }
-.app-links,
-.back-button {
+.app-links {
   margin: 20px 5px;
 }
 .app-links a,
 .back-button a {
   margin-bottom: 15px;
+}
+
+.back-button a {
+  position: relative;
+  bottom: 0 !important;
+  display: inline-block;
 }
 .contact-link,
 .individual-app-link,
@@ -156,6 +165,7 @@ footer i {
   box-shadow: var(--box-shadow);
   color: white;
 }
+
 .contact-section {
   margin-top: 60px;
 }
@@ -191,7 +201,13 @@ footer i {
   margin-top: 50px;
   padding: 20px 0px;
   border-radius: 15px;
-  background-color: rgba(235, 212, 240, 0.892);
+  background: rgb(182, 182, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(182, 182, 221, 0.6) 6%,
+    rgba(217, 174, 238, 0) 37%,
+    rgba(148, 187, 233, 0.6) 100%
+  );
 }
 .email-link {
   display: flex;
@@ -233,9 +249,21 @@ footer i {
 }
 
 .card-back {
-  padding: 12px;
+  padding: 20px;
   position: relative;
+  border-radius: 10px;
+  background: rgb(182, 182, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(182, 182, 221, 0.6) 6%,
+    rgba(217, 174, 238, 0) 37%,
+    rgba(148, 187, 233, 0.6) 100%
+  );
 }
+.card-back p {
+  text-align: left;
+}
+
 .contact-link,
 .about-link,
 .github-button,
@@ -244,7 +272,7 @@ footer i {
 .contact-form-button {
   position: relative;
   top: 0;
-  transition: top ease 0.5s;
+  transition: top ease 0.3s;
 }
 .contact-link:hover,
 .about-link:hover,
