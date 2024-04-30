@@ -23,7 +23,8 @@ h1,
 .app-descriptions h2,
 .tech-stack h2,
 .app-h2,
-.back-h2 {
+.back-h2,
+.form-labels {
   font-family: "Aclonica", sans-serif;
 }
 h1,
@@ -148,15 +149,17 @@ footer i {
 .app-links {
   margin: 20px 5px;
 }
-.app-links a,
-.back-button a {
+.app-links a {
   margin-bottom: 15px;
 }
 
-.back-button a {
-  position: relative;
-  bottom: 0 !important;
-  display: inline-block;
+#back-button1,
+#back-button2,
+#back-button3 {
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  width: 100%;
 }
 .contact-link,
 .individual-app-link,
@@ -278,8 +281,7 @@ footer i {
 .about-link:hover,
 .github-button:hover,
 .live-button:hover,
-.about-app:hover,
-.contact-form-button {
+.about-app:hover {
   top: -6px;
 }
 .container img {
@@ -304,16 +306,44 @@ footer i {
 /* Contact form styling*/
 .form-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   margin-top: 20px;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  background: rgb(182, 182, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(182, 182, 221, 0.6) 6%,
+    rgba(217, 174, 238, 0) 37%,
+    rgba(148, 187, 233, 0.6) 100%
+  );
 }
 
+.error-txt {
+  font-size: 14px;
+  color: red;
+  font-weight: 600;
+  text-align: left;
+  display: none;
+}
+.form-labels {
+  font-size: 16px;
+  display: block;
+  text-align: left;
+}
+.item {
+  min-width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(148, 187, 233, 0.9);
+}
+.item:focus {
+  border: 2px solid rgb(115, 143, 175) !important;
+  outline: none;
+}
 .contact form {
   align-items: center;
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
 }
 
@@ -321,8 +351,13 @@ form .input-box {
   display: flex;
   justify-content: space-between;
 }
-.input-box .input-field {
-  width: 48.5%;
+
+.input-field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.textarea-field {
+  margin-bottom: 25px;
 }
 .contact-section {
   text-align: center;
