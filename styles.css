@@ -399,6 +399,12 @@ form .input-box {
   left: 0;
   position: absolute;
 }
+
+/* Scientific work page styling */
+
+#work-main-heading {
+  margin-top: -20px;
+}
 /* Autotyping professions_animations */
 
 .auto-type span {
@@ -580,7 +586,8 @@ form .input-box {
   .about-shapedivider {
     padding-bottom: 90px !important;
   }
-  #about-main-heading {
+  #about-main-heading,
+  #work-main-heading {
     display: block !important;
   }
   #about-second-heading {
