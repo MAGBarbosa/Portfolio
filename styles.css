@@ -3,6 +3,13 @@
   --secondary-color: #f5f2fe;
   --dark-color: #030407;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --linear-gradient: linear-gradient(
+    90deg,
+    rgba(182, 182, 221, 0.6) 6%,
+    rgba(217, 174, 238, 0) 37%,
+    rgba(148, 187, 233, 0.6) 100%
+  );
+  --heading-font-family: "Aclonica", sans-serif;
 }
 
 body {
@@ -24,8 +31,9 @@ h1,
 .tech-stack h2,
 .app-h2,
 .back-h2,
-.form-labels {
-  font-family: "Aclonica", sans-serif;
+.form-labels,
+.course-names {
+  font-family: var(--heading-font-family);
 }
 #stack-h2,
 .tech-stack h2 {
@@ -45,7 +53,7 @@ h3 {
   margin: 10px 15px;
 }
 .footer-heading {
-  font-family: "Aclonica", sans-serif;
+  font-family: var(--heading-font-family);
   font-size: 25px;
   color: var(--secondary-color);
   text-align: left;
@@ -70,9 +78,10 @@ h3 {
   font-size: 30px;
 }
 #post-contact,
-#projects {
+#projects,
+.research-subtitle {
   font-size: 50px;
-  font-family: "Aclonica", sans-serif;
+  font-family: var(--heading-font-family);
   text-align: center;
 }
 
@@ -225,12 +234,7 @@ footer .container {
   padding: 20px 0px;
   border-radius: 15px;
   background: rgb(182, 182, 221);
-  background: linear-gradient(
-    90deg,
-    rgba(182, 182, 221, 0.6) 6%,
-    rgba(217, 174, 238, 0) 37%,
-    rgba(148, 187, 233, 0.6) 100%
-  );
+  background: var(--linear-gradient);
 }
 .email-link {
   display: flex;
@@ -273,12 +277,7 @@ footer .container {
   position: relative;
   border-radius: 10px;
   background: rgb(182, 182, 221);
-  background: linear-gradient(
-    90deg,
-    rgba(182, 182, 221, 0.6) 6%,
-    rgba(217, 174, 238, 0) 37%,
-    rgba(148, 187, 233, 0.6) 100%
-  );
+  background: var(--linear-gradient);
 }
 .card-back p {
   text-align: left;
@@ -342,12 +341,7 @@ footer .container {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   background: rgb(182, 182, 221);
-  background: linear-gradient(
-    90deg,
-    rgba(182, 182, 221, 0.6) 6%,
-    rgba(217, 174, 238, 0) 37%,
-    rgba(148, 187, 233, 0.6) 100%
-  );
+  background: var(--linear-gradient);
 }
 
 .error-txt {
@@ -422,11 +416,6 @@ form .input-box {
   position: absolute;
 }
 
-/* Scientific work page styling */
-
-#work-main-heading {
-  margin-top: -20px;
-}
 /* Autotyping professions_animations */
 
 .auto-type span {
@@ -500,6 +489,69 @@ form .input-box {
   }
 }
 /* Research page styling */
+
+#work-main-heading {
+  margin-top: -20px;
+}
+.research-subtitle {
+  margin-top: 30px;
+}
+.education-paragraph {
+  text-align: center;
+  margin: 30px;
+}
+.course-names {
+  font-family: var(--heading-font-family);
+  font-size: 22px !important;
+  text-align: left;
+}
+.education .education-container {
+  max-width: 800px;
+  padding: 30px 80px 5px 80px;
+  margin: auto;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  background: var(--linear-gradient);
+}
+
+.education .education-box {
+  width: 100%;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  padding-left: 3rem;
+  border-left: 5px solid var(--dark-color);
+  position: relative;
+}
+
+.education .education-box span {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+}
+
+.education .education-box h3 {
+  font-size: 2rem;
+  color: var(--dark-color);
+  margin-top: 0;
+}
+
+.education .education-box p,
+..education-paragraph {
+  color: var(--dark-color);
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.education .education-box i {
+  position: absolute;
+  top: -3.7rem;
+  left: -2.2rem;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 50%;
+  background: var(--dark-color);
+  padding: 1.2rem;
+}
 
 /* shapedivider styling */
 .shapedivider {
@@ -676,7 +728,8 @@ form .input-box {
     display: none !important;
   }
   #h2,
-  #post-contact {
+  #post-contact,
+  .research-subtitle {
     font-size: 30px;
   }
 
