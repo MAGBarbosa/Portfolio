@@ -499,7 +499,9 @@ form .input-box {
     width: calc(100% + 8px);
   }
 }
+/* Research page styling */
 
+/* shapedivider styling */
 .shapedivider {
   position: relative;
   overflow: hidden;
