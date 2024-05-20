@@ -89,7 +89,8 @@ h3 {
   font-size: 20px;
   opacity: 0.7;
 }
-.app-card {
+.app-card,
+.paper-card {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   margin-bottom: 60px;
@@ -493,8 +494,11 @@ form .input-box {
 #work-main-heading {
   margin-top: -20px;
 }
-.research-subtitle {
-  margin-top: 30px;
+.education-h2 {
+  margin-top: 70px;
+}
+.research-exp-h2 {
+  margin-top: 110px !important;
 }
 .education-paragraph,
 .research-paragraph {
@@ -516,27 +520,28 @@ form .input-box {
 
 .research .research-container,
 .education .education-container {
-  padding: 30px 80px 5px 80px;
+  padding: 30px 40px 5px 60px;
   margin: auto;
   box-shadow: var(--box-shadow);
   border-radius: 10px;
   background: var(--linear-gradient);
 }
+.research .research-box {
+  padding-left: 2.5rem;
+}
+.left-side {
+  padding-right: 2.5rem;
+}
 .education .education-box {
-  width: 100%;
+  padding-left: 3rem;
 }
-.research .research-box {
-  width: 100%;
-}
-.education .education-box,
-.research .research-box {
+.research .research-box,
+.education .education-box {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  padding-left: 3rem;
   border-left: 5px solid var(--dark-color);
   position: relative;
 }
-
 .education .education-box span,
 .research .research-box span {
   font-size: 1.5rem;
@@ -545,9 +550,10 @@ form .input-box {
 
 .education .education-box h3,
 .research .research-box h3 {
-  font-size: 2rem;
+  font-size: 1.2rem !important;
   color: var(--dark-color);
-  margin-top: 0;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .education .education-box p,
@@ -558,18 +564,26 @@ form .input-box {
   text-align: justify;
 }
 
+.research .research-box i {
+  left: -2rem;
+}
+.education .education-box i {
+  left: -2.2rem;
+}
+
 .education .education-box i,
 .research .research-box i {
   position: absolute;
   top: -1rem;
-  left: -2.2rem;
   font-size: 1.3rem;
   color: white;
   border-radius: 50%;
   background: var(--dark-color);
   padding: 1.2rem;
 }
-
+.master-thesis {
+  display: none;
+}
 /* shapedivider styling */
 .shapedivider {
   position: relative;
@@ -663,7 +677,8 @@ form .input-box {
     max-width: 300px;
     height: 220px;
   }
-  .app-card {
+  .app-card,
+  .paper-card {
     width: 100%;
   }
   .app-links a,
@@ -732,7 +747,12 @@ form .input-box {
     font-size: 45px;
     text-align: center;
   }
-
+  .to-disappear {
+    display: none;
+  }
+  .to-appear {
+    display: block;
+  }
   .my-photo {
     max-height: 450px;
   }

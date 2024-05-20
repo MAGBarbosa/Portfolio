@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=dice-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This is an about page of Mélanie Barbosa, a Front-end developer from Porto."
+      content="This is an page of the scientific research work and achievements of Mélanie Barbosa, a Front-end developer from Porto."
     />
     <title>About the Front-End Developer - Mélanie Barbosa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -21,13 +28,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -86,7 +86,7 @@
       </h1>
 
       <div class="education" id="education">
-        <h2 class="research-subtitle">Education</h2>
+        <h2 class="research-subtitle education-h2">Education</h2>
         <p class="education-paragraph">
           Welcome to my educational journey. Below, you will find details about
           my academic qualifications and achievements:
@@ -124,101 +124,126 @@
       </div>
 
       <div class="research" id="research">
-        <h2 class="research-subtitle">Research Experience</h2>
+        <h2 class="research-subtitle research-exp-h2">Research Experience</h2>
         <p class="research-paragraph">
           Welcome to my academic research journey. Below, you'll find an
           overview of my research experience and the places and projects in
           which I've worked:
         </p>
-        <div class="research-container">
-          <div class="research-box">
-            <i class="fas fa-solid fa-briefcase"></i>
-            <span>2020 - Ongoing</span>
-            <h3 class="position">
-              PhD Thesis: "Modern 3D drug screening methodologies for the
-              identification of novel antitumor drugs capable of counteracting
-              multidrug resistance in cancer"
-            </h3>
-            <p>
-              Instituto de Investigação e Inovação em Saúde (i3S - Cancer Drug
-              Resistance Group)
-            </p>
-            <p>
-              I was awarded a PhD scholarship by the Fundação para a Ciência e
-              Tecnologia (FCT). My PhD project focused on evaluating the
-              activity of novel isoquinoline quinone <em>N</em>-oxides against
-              multidrug-resistant tumors. This involved investigating the
-              mechanisms of action in both <em>in vitro</em> 2D cell models and
-              3D cell models, specifically in spheroids composed of triple
-              cultures of fibroblasts, macrophages, and tumor cells.
-            </p>
-          </div>
-          <div class="research-box">
-            <i class="fas fa-solid fa-briefcase"></i>
-            <span>2019-2020</span>
-            <h3 class="position">
-              Master fellow: "Biomarkers for minimal residual disease"
-            </h3>
-            <p>
-              Instituto de Investigação e Inovação em Saúde (i3S - Cancer Drug
-              Resistance Group)
-            </p>
-            <p>
-              I was selected for a Master fellowship position, where I processed
-              blood samples from patients with Multiple Myeloma. In this
-              project, I isolated and characterized extracellular vesicles
-              isolated non-invasively from liquid biopsies and investigated the
-              presence of Minimal Residual Disease biomarkers.
-            </p>
-          </div>
+        <div class="research-container container-fluid">
+          <div class="row">
+            <div class="research-box col-sm-12 col-md-12 col-lg-6 left-side">
+              <i class="fas fa-solid fa-briefcase"></i>
+              <span>2020 - Ongoing</span>
+              <h3 class="position">
+                PhD Thesis: "Modern 3D drug screening methodologies for the
+                identification of novel antitumor drugs capable of counteracting
+                multidrug resistance in cancer"
+              </h3>
+              <p>
+                Instituto de Investigação e Inovação em Saúde (i3S - Cancer Drug
+                Resistance Group)
+              </p>
+              <p>
+                I was awarded a PhD scholarship by the Fundação para a Ciência e
+                Tecnologia (FCT). My PhD project focused on evaluating the
+                activity of novel Isoquinolinequinone <em>N</em>-oxides against
+                multidrug-resistant tumors. This involved investigating the
+                mechanisms of action in both <em>in vitro</em> 2D cell models
+                and 3D cell models, specifically in spheroids composed of triple
+                cultures of fibroblasts, macrophages, and tumor cells.
+              </p>
+            </div>
 
-          <div class="research-box">
-            <i class="fas fa-solid fa-briefcase"></i>
-            <span>2016-2018</span>
-            <h3 class="position">
-              Master thesis: "Obesity and environmental pollutants: a reason for
-              concern?"
-            </h3>
-            <p>
-              Interdisciplinary Centre of Marine and Environmental Research
-              (CIIMAR - Endocrine disruptors and emergent contaminants'
-              Laboratory)
-            </p>
-            <p>
-              I conducted <em>in vitro</em> and <em>in vivo</em> assays (using
-              zebrafish larvae) to assess the toxic effects and mechanisms of
-              action of tributyltin and wastewater treatment plant effluents on
-              obesity and lipid homeostasis. Upon completing my master's thesis,
-              I was invited by my group leader and supervisor to continue with
-              the team as a research technician. In this role, I carried out
-              further research on the project and managed various laboratory
-              tasks, including stock verification and product quotation
-              requests.
-            </p>
+            <div class="research-box col-sm-12 col-md-12 col-lg-6 to-disappear">
+              <i class="fas fa-solid fa-briefcase"></i>
+              <span>2016-2018</span>
+              <h3 class="position">
+                Master Thesis: "Obesity and environmental pollutants: a reason
+                for concern?"
+              </h3>
+              <p>
+                Interdisciplinary Centre of Marine and Environmental Research
+                (CIIMAR - Endocrine disruptors and emergent contaminants'
+                Laboratory)
+              </p>
+              <p>
+                I conducted <em>in vitro</em> and <em>in vivo</em> assays (using
+                zebrafish larvae) to assess the toxic effects and mechanisms of
+                action of tributyltin and wastewater treatment plant effluents
+                on obesity and lipid homeostasis. Upon completing my master's
+                thesis, I was invited by my group leader and supervisor to
+                continue with the team as a research technician. In this role, I
+                carried out further research on the project and managed various
+                laboratory tasks, including stock verification and product
+                quotation requests.
+              </p>
+            </div>
           </div>
-          <div class="research-box">
-            <i class="fas fa-solid fa-briefcase"></i>
-            <span>2014-2015</span>
-            <h3 class="position">
-              Master thesis: "Obesity and environmental pollutants: a reason for
-              concern?"
-            </h3>
-            <p>
-              Interdisciplinary Centre of Marine and Environmental Research
-              (CIIMAR - Endocrine disruptors and emergent contaminants'
-              Laboratory)
-            </p>
-            <p>
-              I conducted <em>in vitro</em> and <em>in vivo</em> assays (using
-              zebrafish larvae) to assess the toxic effects and mechanisms of
-              action of tributyltin and wastewater treatment plant effluents on
-              obesity and lipid homeostasis. Upon completing my master's thesis,
-              I was invited by my group leader and supervisor to continue with
-              the team as a research technician. In this role, I carried out
-              further research on the project and managed various laboratory
-              tasks, including stock verification and product quotation
-              requests.
-            </p>
+          <div class="row">
+            <div class="research-box col-sm-12 col-md-12 col-lg-6 left-side">
+              <i class="fas fa-solid fa-briefcase"></i>
+              <span>2019-2020</span>
+              <h3 class="position">
+                Master Fellowship: "Biomarkers for minimal residual disease"
+              </h3>
+              <p>
+                Instituto de Investigação e Inovação em Saúde (i3S - Cancer Drug
+                Resistance Group)
+              </p>
+              <p>
+                I was selected for a Master fellowship position, where I
+                processed blood samples from patients with Multiple Myeloma. In
+                this project, I isolated and characterized extracellular
+                vesicles isolated non-invasively from liquid biopsies and
+                investigated the presence of Minimal Residual Disease
+                biomarkers.
+              </p>
+            </div>
+            <div
+              class="research-box col-sm-12 col-md-12 col-lg-6 to-appear master-thesis"
+            >
+              <i class="fas fa-solid fa-briefcase"></i>
+              <span>2016-2018</span>
+              <h3 class="position">
+                Master Thesis: "Obesity and environmental pollutants: a reason
+                for concern?"
+              </h3>
+              <p>
+                Interdisciplinary Centre of Marine and Environmental Research
+                (CIIMAR - Endocrine disruptors and emergent contaminants'
+                Laboratory)
+              </p>
+              <p>
+                I conducted <em>in vitro</em> and <em>in vivo</em> assays (using
+                zebrafish larvae) to assess the toxic effects and mechanisms of
+                action of tributyltin and wastewater treatment plant effluents
+                on obesity and lipid homeostasis. Upon completing my master's
+                thesis, I was invited by my group leader and supervisor to
+                continue with the team as a research technician. In this role, I
+                carried out further research on the project and managed various
+                laboratory tasks, including stock verification and product
+                quotation requests.
+              </p>
+            </div>
+            <div class="research-box col-sm-12 col-md-12 col-lg-6">
+              <i class="fas fa-solid fa-briefcase"></i>
+              <span>2014-2015</span>
+              <h3 class="position">
+                Bachelor Internship: "Aerobiology of <em>Pinus</em> spp. and
+                effects of different O<sub>3</sub>
+                levels on pollen fertility, proteins and allergenicity"
+              </h3>
+              <p>
+                Faculty of Sciences of the University of Porto (Aerobiology
+                Group)
+              </p>
+              <p>
+                In this project, I performed <em>in vitro</em> assays in which I
+                assessed the effects of ozone on the germination, viability and
+                allergenic potential of <em>Pinus</em> spp. pollen.
+              </p>
+            </div>
           </div>
         </div>
       </div>
