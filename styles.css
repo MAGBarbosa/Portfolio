@@ -37,8 +37,7 @@ h1,
   font-family: var(--heading-font-family);
 }
 #stack-h2,
-.tech-stack h2,
-.papers-card h2 {
+.tech-stack h2 {
   font-size: 25px;
 }
 h1,
@@ -621,9 +620,16 @@ form .input-box {
 .awards {
   border-radius: 4px;
   padding: 5px 15px;
+  margin-bottom: 25px;
   color: var(--dark-color);
-  background-color: var(--primary-color);
+  background-color: white;
+  font-weight: 400;
+  border: 1.5px solid var(--dark-color);
   text-align: justify !important;
+  box-shadow: var(--box-shadow);
+}
+.papers-card h2 {
+  font-size: 22px;
 }
 /* shapedivider styling */
 .shapedivider {
@@ -754,8 +760,7 @@ form .input-box {
     text-align: center;
   }
 
-  .individual-app-link,
-  .paper-button {
+  .individual-app-link {
     max-width: 100% !important;
     display: block !important;
   }
