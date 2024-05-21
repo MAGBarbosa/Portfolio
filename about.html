@@ -196,7 +196,9 @@
                     class="item"
                     autocomplete="off"
                   />
-                  <div class="error-txt">Please fill "Email" section!</div>
+                  <div class="error-txt email">
+                    Please fill "Email" section!
+                  </div>
                 </div>
               </div>
             </div>
@@ -228,7 +230,7 @@
             ></textarea>
             <div class="error-txt">Please fill "Message" section!</div>
           </div>
-          <button type="submit" class="contact-form-button">
+          <button type="submit" class="contact-form-button" id="form-button">
             Send Message
           </button>
         </form>
@@ -310,5 +312,7 @@
     <script>
       AOS.init();
     </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

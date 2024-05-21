@@ -370,6 +370,22 @@ footer .container {
   text-align: left;
   display: none;
 }
+.field.error .item {
+  border-color: #d93025;
+}
+.field .error-txt {
+  font-size: 14.5px;
+  color: #d93025;
+  text-align: left;
+  margin: 0px 0 10px;
+  display: none;
+}
+.field.error .error-txt {
+  display: block;
+}
+form .textarea-field .error-txt {
+  margin-top: -10px;
+}
 .form-labels {
   font-size: 16px;
   display: block;
