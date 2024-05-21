@@ -70,7 +70,7 @@ function checkEmail() {
     if (email.value != "") {
       errorTxtEmail.innerText = "Enter a valid email address";
     } else {
-      errorTxtEmail.innerText = "Email Address can't be blank";
+      errorTxtEmail.innerText = 'Please fill "Email" section!';
     }
   } else {
     email.classList.remove("error");
