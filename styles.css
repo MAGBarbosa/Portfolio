@@ -821,6 +821,12 @@ footer .container {
   .education-box h3 {
     font-size: 18px !important;
   }
+  .education .education-box p,
+  .education-paragraph,
+  .research .research-box p,
+  .research-paragraph {
+    text-align: left;
+  }
 }
 
 @media (max-width: 576px) {
