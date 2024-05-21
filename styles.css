@@ -102,6 +102,9 @@ h3,
 footer p {
   color: var(--secondary-color);
 }
+.footer-project-github {
+  margin: 10px 0px 30px 0px;
+}
 footer p,
 footer a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -142,11 +145,17 @@ footer .container {
 }
 
 /*end*/
-.useful-links a {
+.useful-links a,
+.footer-link {
   display: inline-block;
   text-decoration: none;
   color: var(--primary-color);
-  width: 200px;
+  transition: 0.2s ease-in-out;
+}
+
+.useful-links a:hover,
+.footer-link:hover {
+  color: white;
 }
 
 .navigation-links {
@@ -759,7 +768,8 @@ footer .container {
     max-width: 100% !important;
     display: block !important;
   }
-  .contact-info {
+  .contact-info,
+  .footer-project-github {
     text-align: center !important;
   }
   .second-footer-heading {
