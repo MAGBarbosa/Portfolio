@@ -559,10 +559,11 @@ footer .container {
 
 .education .education-box h3,
 .research .research-box h3 {
-  font-size: 1.2rem !important;
+  font-size: 20px;
   color: var(--dark-color);
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
+  text-align: left;
 }
 
 .education .education-box p,
@@ -735,8 +736,9 @@ footer .container {
     display: block;
   }
 
-  #projects {
-    font-size: 32px;
+  .research-exp-h2,
+  .education-h2 {
+    font-size: 28px;
   }
   .app-h2 {
     font-size: 22px;
@@ -787,11 +789,46 @@ footer .container {
   .tech-stack h2 {
     font-size: 18px !important;
   }
+
+  .research .research-container,
+  .education .education-container {
+    padding: 30px 20px 5px 40px;
+  }
+  .research .research-box,
+  .education .education-box {
+    padding-left: 1.5rem;
+  }
+  .left-side {
+    padding-right: 10px;
+  }
+  .education .education-box i,
+  .research .research-box i {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+  .research .research-box i {
+    left: -1.6rem;
+    top: -0.5rem;
+  }
+  .education .education-box i {
+    left: -1.7rem;
+    top: -0.5rem;
+  }
+  .year {
+    margin-left: 10px;
+  }
+  .research-box h3,
+  .education-box h3 {
+    font-size: 18px !important;
+  }
 }
 
 @media (max-width: 576px) {
   .footer-columns {
     padding: 10px;
+  }
+  .footer-heading {
+    font-size: 22px;
   }
   #h1 {
     font-size: 45px;
@@ -803,21 +840,23 @@ footer .container {
 
   #about-main-heading,
   #work-main-heading {
+    font-size: 36px !important;
+  }
+
+  #h2,
+  #projects,
+  #post-contact {
+    font-size: 32px !important;
+  }
+  #about-main-heading,
+  #work-main-heading {
     display: block !important;
   }
   #about-second-heading {
     display: none !important;
   }
-  #h2,
-  #post-contact,
-  .research-subtitle {
-    font-size: 30px;
-  }
 
   .email-link {
     font-size: 25px;
-  }
-  h3 {
-    padding: 10px;
   }
 }
