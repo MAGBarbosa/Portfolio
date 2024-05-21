@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=dice-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="This is an page of the scientific research work and achievements of Mélanie Barbosa, a Front-end developer from Porto."
@@ -29,6 +29,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav
@@ -98,7 +100,12 @@
             <h3 class="course-names">PhD in Pharmaceutical Sciences</h3>
             <p>Faculty of Pharmacy of the University of Porto (Portugal)</p>
           </div>
-          <div class="education-box">
+          <div
+            class="education-box"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <i class="fas fa-graduation-cap"></i>
             <span>2017</span>
             <h3 class="course-names">
@@ -110,7 +117,12 @@
               Dissertation grade: 19
             </p>
           </div>
-          <div class="education-box">
+          <div
+            class="education-box"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <i class="fas fa-graduation-cap"></i>
             <span>2015</span>
             <h3 class="course-names">Bachelor in Biology</h3>
@@ -132,7 +144,12 @@
         </p>
         <div class="research-container container-fluid">
           <div class="row">
-            <div class="research-box col-sm-12 col-md-12 col-lg-6 left-side">
+            <div
+              class="research-box col-sm-12 col-md-12 col-lg-6 left-side"
+              data-aos="fade-up-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            >
               <i class="fas fa-solid fa-briefcase"></i>
               <span>2020 - Ongoing</span>
               <h3 class="position">
@@ -155,53 +172,11 @@
               </p>
             </div>
 
-            <div class="research-box col-sm-12 col-md-12 col-lg-6 to-disappear">
-              <i class="fas fa-solid fa-briefcase"></i>
-              <span>2016-2018</span>
-              <h3 class="position">
-                Master Thesis: "Obesity and environmental pollutants: a reason
-                for concern?"
-              </h3>
-              <p>
-                Interdisciplinary Centre of Marine and Environmental Research
-                (CIIMAR - Endocrine disruptors and emergent contaminants'
-                Laboratory)
-              </p>
-              <p>
-                I conducted <em>in vitro</em> and <em>in vivo</em> assays (using
-                zebrafish larvae) to assess the toxic effects and mechanisms of
-                action of tributyltin and wastewater treatment plant effluents
-                on obesity and lipid homeostasis. Upon completing my master's
-                thesis, I was invited by my group leader and supervisor to
-                continue with the team as a research technician. In this role, I
-                carried out further research on the project and managed various
-                laboratory tasks, including stock verification and product
-                quotation requests.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="research-box col-sm-12 col-md-12 col-lg-6 left-side">
-              <i class="fas fa-solid fa-briefcase"></i>
-              <span>2019-2020</span>
-              <h3 class="position">
-                Master Fellowship: "Biomarkers for minimal residual disease"
-              </h3>
-              <p>
-                Instituto de Investigação e Inovação em Saúde (i3S - Cancer Drug
-                Resistance Group)
-              </p>
-              <p>
-                I was selected for a Master fellowship position, where I
-                processed blood samples from patients with Multiple Myeloma. In
-                this project, I isolated and characterized extracellular
-                vesicles collected non-invasively from liquid biopsies and
-                investigated the presence of Minimal Residual Disease
-                biomarkers.
-              </p>
-            </div>
             <div
-              class="research-box col-sm-12 col-md-12 col-lg-6 to-appear master-thesis"
+              class="research-box col-sm-12 col-md-12 col-lg-6 to-disappear"
+              data-aos="fade-up-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
             >
               <i class="fas fa-solid fa-briefcase"></i>
               <span>2016-2018</span>
@@ -226,7 +201,67 @@
                 quotation requests.
               </p>
             </div>
-            <div class="research-box col-sm-12 col-md-12 col-lg-6">
+          </div>
+          <div class="row">
+            <div
+              class="research-box col-sm-12 col-md-12 col-lg-6 left-side"
+              data-aos="fade-up-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            >
+              <i class="fas fa-solid fa-briefcase"></i>
+              <span>2019-2020</span>
+              <h3 class="position">
+                Master Fellowship: "Biomarkers for minimal residual disease"
+              </h3>
+              <p>
+                Instituto de Investigação e Inovação em Saúde (i3S - Cancer Drug
+                Resistance Group)
+              </p>
+              <p>
+                I was selected for a Master fellowship position, where I
+                processed blood samples from patients with Multiple Myeloma. In
+                this project, I isolated and characterized extracellular
+                vesicles collected non-invasively from liquid biopsies and
+                investigated the presence of Minimal Residual Disease
+                biomarkers.
+              </p>
+            </div>
+            <div
+              class="research-box col-sm-12 col-md-12 col-lg-6 to-appear master-thesis"
+              data-aos="fade-up-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            >
+              <i class="fas fa-solid fa-briefcase"></i>
+              <span>2016-2018</span>
+              <h3 class="position">
+                Master Thesis: "Obesity and environmental pollutants: a reason
+                for concern?"
+              </h3>
+              <p>
+                Interdisciplinary Centre of Marine and Environmental Research
+                (CIIMAR - Endocrine disruptors and emergent contaminants'
+                Laboratory)
+              </p>
+              <p>
+                I conducted <em>in vitro</em> and <em>in vivo</em> assays (using
+                zebrafish larvae) to assess the toxic effects and mechanisms of
+                action of tributyltin and wastewater treatment plant effluents
+                on obesity and lipid homeostasis. Upon completing my master's
+                thesis, I was invited by my group leader and supervisor to
+                continue with the team as a research technician. In this role, I
+                carried out further research on the project and managed various
+                laboratory tasks, including stock verification and product
+                quotation requests.
+              </p>
+            </div>
+            <div
+              class="research-box col-sm-12 col-md-12 col-lg-6"
+              data-aos="fade-up-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            >
               <i class="fas fa-solid fa-briefcase"></i>
               <span>2014-2015</span>
               <h3 class="position">
@@ -257,7 +292,12 @@
         collaborations in which I have been involved:
       </p>
       <div class="container-fluid container">
-        <div class="row app-sections">
+        <div
+          class="row app-sections"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="app-card papers-card mx-1">
               <h2>Journal of Medicinal Chemistry (ACS)</h2>
@@ -334,7 +374,12 @@
           </div>
         </div>
 
-        <div class="row app-sections">
+        <div
+          class="row app-sections"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="app-card papers-card mx-1">
               <h2>Cells (MDPI)</h2>
@@ -455,12 +500,16 @@
         </div>
       </div>
     </footer>
-  </body>
 
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script
-    src="https://kit.fontawesome.com/40bcb69d81.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/40bcb69d81.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

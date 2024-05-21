@@ -28,6 +28,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -105,7 +106,12 @@
     <div class="container">
       <p id="projects">Web Development Projects</p>
       <div class="container-fluid">
-        <div class="app-sections row">
+        <div
+          class="app-sections row"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
           <div class="col-md-4 col-sm-12">
             <div class="app-card mx-1" id="app1">
               <div class="card-front" id="app1-front">
@@ -335,12 +341,15 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/40bcb69d81.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
-
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script
-    src="https://kit.fontawesome.com/40bcb69d81.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="index.js"></script>
 </html>

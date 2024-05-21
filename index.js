@@ -34,5 +34,3 @@ aboutApp3Button.onclick = function () {
 backButton3.onclick = function () {
   app3.style.transform = "rotateY(0deg)";
 };
-
-/*div.style.display = "none";*/
