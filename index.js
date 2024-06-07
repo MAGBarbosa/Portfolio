@@ -53,7 +53,6 @@ function sendEmail() {
     `<br/>` +
     `Message: ${bodyMessage.value}`;
 
-  console.log("vou enviar mails: ", `${email.value}`);
   Email.send({
     SecureToken: "6e30ab4f-d162-4d07-8f97-fd52de36a0b6",
     To: "melanie_barbosa@hotmail.com",
@@ -61,7 +60,6 @@ function sendEmail() {
     Subject: subject.value,
     Body: body,
   }).then((message) => {
-    console.log(message);
     if (message == "OK") {
       alert("Message sent successfully!");
     } else {
