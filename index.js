@@ -115,19 +115,21 @@ function checkEmail() {
     email.parentElement.classList.remove("error");
   }
 }
-btn.addEventListener("click", (e) => {
-  e.preventDefault();
-  checkInputs();
+if (btn) {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    checkInputs();
 
-  if (
-    !name.classList.contains("error") &&
-    !email.classList.contains("error") &&
-    !subject.classList.contains("error") &&
-    !bodyMessage.classList.contains("error")
-  ) {
-    sendEmail();
+    if (
+      !name.classList.contains("error") &&
+      !email.classList.contains("error") &&
+      !subject.classList.contains("error") &&
+      !bodyMessage.classList.contains("error")
+    ) {
+      sendEmail();
 
-    form.reset();
-    return false;
-  }
-});
+      form.reset();
+      return false;
+    }
+  });
+}
