@@ -42,6 +42,7 @@ let email = document.getElementById("email");
 let subject = document.getElementById("subject");
 let bodyMessage = document.getElementById("message");
 let btn = document.getElementById("form-button");
+let form = document.getElementById("contact-form");
 
 function sendEmail() {
   let body =
@@ -60,13 +61,14 @@ function sendEmail() {
     Subject: subject.value,
     Body: body,
   }).then((message) => {
-    if (message == "OK") {
+    if (message.toLowerCase().includes("ok")) {
       alert("Message sent successfully!");
     } else {
       alert(
         "Something went wrong. Please contact me through an alternative method."
       );
     }
+    console.log("SMTP.js response:", message);
   });
 }
 
